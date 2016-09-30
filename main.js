@@ -17,11 +17,20 @@ console.log(newArray);
 
 //********QUESTION 3******************
 var money = items.map(function(money){
-  console.log(money.currency_code);
+  if(money.currency_code != "USD"){
+    console.log(money.title +" "+ money.currency_code +" "+ money.price);
+  }
+
 });
 
 
+// //************QUESTION 4***************
+var itemsMaterial = items.filter(function (mat) {
+  if (mat.material == 'wood') {
+    console.log(wood);
+  }
 
+});
 
 
 
