@@ -30,8 +30,13 @@ var money = items.map(function(money){
 //
 // });
 // console.log(itemsMaterial);
+//
 
-
+var itemsMaterial = items.forEach(function(item){
+  if(item.materials.indexOf("wood") > -1) {
+    console.log(item.title);
+  }
+});
 
 //************QUESTION 5*******************
 var plusEight = items.filter(function(q){
