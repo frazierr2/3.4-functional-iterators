@@ -25,12 +25,32 @@ var money = items.map(function(money){
 
 
 // //************QUESTION 4***************
-var itemsMaterial = items.filter(function (mat) {
-  if (mat.material == 'wood') {
-    console.log(wood);
-  }
+// var itemsMaterial = items.filter(function(supplies) {
+//     return supplies.materials == 'wood';
+//
+// });
+// console.log(itemsMaterial);
+
+
+
+//************QUESTION 5*******************
+var plusEight = items.filter(function(q){
+  return q.materials.length >= 8;
 
 });
+console.log(plusEight);
+
+
+//**************QUESTION 6*****************
+
+var creator = items.filter(function(madeIt){
+return madeIt.who_made == "i_did";
+
+
+});
+console.log(creator.length + " were made by their sellers");
+
+
 
 
 
