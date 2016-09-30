@@ -25,18 +25,14 @@ var money = items.map(function(money){
 
 
 // //************QUESTION 4***************
-// var itemsMaterial = items.filter(function(supplies) {
-//     return supplies.materials == 'wood';
-//
-// });
-// console.log(itemsMaterial);
-//
+var itemsMaterial = items.filter(function(supplies) {
 
-var itemsMaterial = items.forEach(function(item){
-  if(item.materials.indexOf("wood") > -1) {
-    console.log(item.title);
-  }
+    return supplies.materials.indexOf("wood") > -1; // supplies.materials == 'wood';
 });
+console.log(itemsMaterial);
+
+
+
 
 //************QUESTION 5*******************
 var plusEight = items.filter(function(q){
